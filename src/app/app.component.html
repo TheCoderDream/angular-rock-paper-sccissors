@@ -1,0 +1,17 @@
+<div class="app">
+  <div class="info">
+    <h2>Rock. Paper. Scissors</h2>
+    <info [wins]="wins" [losses]="losses"></info>
+  </div>
+  <game-state *ngIf="state"
+   [userChoice]="userChoice.name"
+   [computerChoice]="computerChoice.name"
+   [state]="state"
+   (clicked)="restartGame()"
+   >
+
+  </game-state>
+  <choices (choosed)="playGame($event)">
+
+  </choices>
+</div>
