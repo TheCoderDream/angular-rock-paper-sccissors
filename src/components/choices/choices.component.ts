@@ -7,8 +7,4 @@ import { Choices } from '../models/choices';
 })
 export class ChoicesComponent {
   @Output() choosed = new EventEmitter<Choices>();
-
-  sendAction(e): void {
-    e.target.name && this.choosed.emit(e.target.name);
-  }
 }

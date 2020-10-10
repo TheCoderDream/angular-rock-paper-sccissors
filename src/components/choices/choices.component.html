@@ -3,14 +3,14 @@
   <div></div>
   <div>Computer</div>
 
-  <div (click)="sendAction($event)">
-    <button class="rock" name="rock">
+  <div>
+    <button class="rock" (click)="choosed.emit('rock')">
       <img src="./assets/rock.svg">
     </button>
-    <button class="paper" name="paper">
+    <button class="paper" (click)="choosed.emit('paper')">
       <img src="./assets/paper.svg">
     </button>
-    <button class="scissors" name="scissors">
+    <button class="scissors" (click)="choosed.emit('scissors')">
       <img src="./assets/scissors.svg">
     </button>
   </div>

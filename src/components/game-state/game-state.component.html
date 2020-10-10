@@ -1,10 +1,11 @@
 <div 
+  (click)="clicked.emit()"
   class="game-state {{state}}">
   <div>
     <div class="game-state-content">
-      <span><img src="./assets/{{userChoice}}.svg" alt=""></span>
+      <img width="80" height="80" src="./assets/{{userChoice}}.svg" alt="">
       <span>{{stateMessages[state]}}</span>
-      <span><img src="./assets/{{computerChoice}}.svg" alt=""></span>
+      <img width="80" height="80" src="./assets/{{computerChoice}}.svg" alt="">
     </div>
   </div>
 </div>

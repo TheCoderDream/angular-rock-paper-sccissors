@@ -208,6 +208,7 @@ h6 {
 .game-state-content {
   display: flex;
   justify-content: center;
+  align-items: center
 }
 
 .game-state-content p {
